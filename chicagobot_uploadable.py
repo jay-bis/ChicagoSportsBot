@@ -21,6 +21,7 @@ def authenticate():
     """
     
     print('Authenticating...\n')
+    #personal info goes into X'ed out forms
     reddit = praw.Reddit(client_id='XXXXXXX', client_secret='XXXXXXXX', password='XXXXXXXX', username='XXXXXXXX', user_agent ='XXXXXXX')
     print('Authenticated as {}...\n'.format(reddit.user.me()))
     return reddit
